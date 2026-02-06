@@ -1,15 +1,15 @@
 /* ========================================
-   Diário de Bordo SEDUC - Styles
+   Formulário de Controle - Pacto pela Economia 4x7 - Styles
    ======================================== */
 
 :root {
-    /* Primary Colors - Palette based on #28538c */
-    --color-primary-dark: #0f1f35;
-    --color-primary: #183352;
-    --color-primary-light: #28538c;
-    --color-accent: #28538c;
-    --color-accent-light: #4b7cc4;
-    --color-accent-lighter: #7ba3dc;
+    /* Primary Colors - Palette based on Pacto pela Economia #003DA5 */
+    --color-primary-dark: #001d52;
+    --color-primary: #002d7a;
+    --color-primary-light: #003DA5;
+    --color-accent: #003DA5;
+    --color-accent-light: #0052d9;
+    --color-accent-lighter: #3377ff;
 
     /* Neutral Colors */
     --color-white: #ffffff;
@@ -20,15 +20,15 @@
     --color-gray-700: #2d3d52;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #0f1f35 0%, #183352 40%, #28538c 100%);
-    --gradient-accent: linear-gradient(135deg, #28538c 0%, #4b7cc4 100%);
+    --gradient-primary: linear-gradient(135deg, #001d52 0%, #002d7a 40%, #003DA5 100%);
+    --gradient-accent: linear-gradient(135deg, #003DA5 0%, #0052d9 100%);
 
     /* Shadows */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --shadow-glow: 0 0 40px rgba(46, 109, 164, 0.3);
+    --shadow-glow: 0 0 40px rgba(0, 61, 165, 0.3);
 
     /* Typography */
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -68,7 +68,7 @@ html {
 
 body {
     font-family: var(--font-family);
-    background: #083161;
+    background: #002d7a;
     background-size: cover;
     color: var(--color-white);
     min-height: 100vh;
@@ -100,8 +100,8 @@ body {
     height: 200%;
     background: linear-gradient(135deg,
             transparent 0%,
-            rgba(46, 109, 164, 0.08) 25%,
-            rgba(74, 144, 217, 0.05) 50%,
+            rgba(0, 61, 165, 0.08) 25%,
+            rgba(0, 82, 217, 0.05) 50%,
             transparent 75%);
     transform: rotate(-15deg);
 }
@@ -115,8 +115,8 @@ body {
     height: 150%;
     background: linear-gradient(-45deg,
             transparent 0%,
-            rgba(46, 109, 164, 0.06) 30%,
-            rgba(74, 144, 217, 0.04) 60%,
+            rgba(0, 61, 165, 0.06) 30%,
+            rgba(0, 82, 217, 0.04) 60%,
             transparent 100%);
     transform: rotate(25deg);
 }
@@ -132,13 +132,13 @@ body {
     z-index: 10;
     padding: var(--spacing-lg) var(--spacing-xl);
     background: linear-gradient(135deg,
-            #041226 0%,
-            #0a2342 20%,
-            #123456 40%,
-            #1a4971 60%,
-            #0a2342 80%,
-            #041226 100%);
-    border-bottom: 2px solid rgba(74, 144, 217, 0.3);
+            #001d52 0%,
+            #002d7a 20%,
+            #003DA5 40%,
+            #0052d9 60%,
+            #002d7a 80%,
+            #001d52 100%);
+    border-bottom: 2px solid rgba(0, 61, 165, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -253,11 +253,11 @@ body {
 
 .form-card:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-xl), 0 0 60px rgba(46, 109, 164, 0.4);
+    box-shadow: var(--shadow-xl), 0 0 60px rgba(0, 61, 165, 0.4);
 }
 
 .form-header {
-    background: #28538c;
+    background: #003DA5;
     padding: var(--spacing-lg) var(--spacing-xl);
     display: flex;
     align-items: center;
