@@ -104,7 +104,6 @@ body {
             rgba(74, 144, 217, 0.05) 50%,
             transparent 75%);
     transform: rotate(-15deg);
-    animation: shimmer 20s ease-in-out infinite;
 }
 
 .background-pattern::after {
@@ -120,22 +119,9 @@ body {
             rgba(74, 144, 217, 0.04) 60%,
             transparent 100%);
     transform: rotate(25deg);
-    animation: shimmer 25s ease-in-out infinite reverse;
 }
 
-@keyframes shimmer {
 
-    0%,
-    100% {
-        opacity: 0.3;
-        transform: rotate(-15deg) translateX(0);
-    }
-
-    50% {
-        opacity: 0.6;
-        transform: rotate(-15deg) translateX(10px);
-    }
-}
 
 /* ========================================
    Header
@@ -152,25 +138,11 @@ body {
             #1a4971 60%,
             #0a2342 80%,
             #041226 100%);
-    background-size: 400% 400%;
-    animation: headerGradient 15s ease infinite;
     border-bottom: 2px solid rgba(74, 144, 217, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes headerGradient {
-    0% {
-        background-position: 0% 50%;
-    }
 
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 .header-content {
     max-width: 1200px;
@@ -211,20 +183,9 @@ body {
 .intro-section {
     text-align: center;
     margin-bottom: var(--spacing-2xl);
-    animation: fadeInUp 0.6s ease-out;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .page-title {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -242,7 +203,6 @@ body {
     height: auto;
     margin-bottom: var(--spacing-lg);
     filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
-    animation: fadeInUp 0.8s ease-out;
 }
 
 .page-subtitle {
@@ -256,20 +216,9 @@ body {
 
 .title-icon {
     font-size: 1.2em;
-    animation: bounce 2s ease-in-out infinite;
 }
 
-@keyframes bounce {
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-}
 
 .page-description {
     font-size: clamp(1rem, 2vw, 1.125rem);
@@ -497,16 +446,5 @@ body {
             var(--color-gray-100) 25%,
             var(--color-gray-200) 50%,
             var(--color-gray-100) 75%);
-    background-size: 200% 100%;
-    animation: loading 1.5s ease-in-out infinite;
 }
 
-@keyframes loading {
-    0% {
-        background-position: 200% 0;
-    }
-
-    100% {
-        background-position: -200% 0;
-    }
-}
